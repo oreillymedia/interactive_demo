@@ -1,0 +1,19 @@
+== Tinkercad
+
+https://tinkercad.com
+
+// Screenshot of Model in the Program
+
+Tinkercad is a simple to use web-based 3D modeler that allows you to build models quickly using a variety of geometric shapes and three basic tools: Add, Subtract and Workplane. It also has the ability to import STL files to create mashups.  Tinkercad allows you to download a STL to print an item yourself and also has partnerships with a several 3D printing services: Shapeways, i.materialize, Ponoko and sculpteo.
+
+The quickest way to get acquainted with Tinkercad is to go through the built in tutorials or Quests, located under the "learning" tab.   
+
+Some tips before we get started:
+
+* Use Workplanes to rotate your view of the object by dragging them to the work area and positioning them on a surface of your mode. 
+* Scaling length and width - Clicking on an object in Tinkercad selects the object and allows you to manipulate its length, width and height properties by dragging the handles (white squares) that border the selected shape.
+* To scale proportionally, hold down the shift key. 
+* To see shape's dimensions, hover over a shape handle (white box)
+* Use the cube icon under the navigation arrows to zoom in on a selected shape.
+* The triangle marker indicates how far off the workplace an object is.
+
