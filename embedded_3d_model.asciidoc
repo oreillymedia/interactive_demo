@@ -1,4 +1,4 @@
-== Tinkercad
+== Embedded 3D model (Thingiview)
 
 Tinkercad is a simple to use web-based 3D modeler that allows you to build models quickly using a variety of geometric shapes and three basic tools: Add, Subtract and Workplane. It also has the ability to import STL files to create mashups.  Tinkercad allows you to download a STL to print an item yourself and also has partnerships with a several 3D printing services: Shapeways, i.materialize, Ponoko and sculpteo.
 
