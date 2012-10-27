@@ -1,4 +1,4 @@
-== New Ineractive Samples
+== Embedded Video Sample
 
 This is my video:
 
