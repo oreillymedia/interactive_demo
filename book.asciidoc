@@ -5,3 +5,5 @@
 include::sample1.asciidoc[]
 
 include::sample2.asciidoc[]
+
+include::sample3.asciidoc[]
