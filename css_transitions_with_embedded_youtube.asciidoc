@@ -1,4 +1,4 @@
-== Create a Pop-Out Menu with CSS Transitions
+== Animated CSS Transitions with Embedded YouTube Video 
 
 New to CSS3, the +transition+ property gives us a way to add animation-esque effects to elements without resorting to JavaScript. A transition by nature transforms one thing into another, and in CSS it allows us to create striking visuals and effects based on user actions. Imagine a button that fades out, or a box that expands. In this article, I'll introduce you to the basics of transitions and then I'll show you how to create a pop-out menu for your website.
 
