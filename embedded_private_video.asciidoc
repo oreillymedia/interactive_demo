@@ -1,0 +1,8 @@
+== New Ineractive Samples
+
+This is my video:
+
+video::http://d386p6mmpl7q7t.cloudfront.net/1230000000013/videos/45fa7668d9b1629bcfd124552db0821e.mp4[poster='http://d386p6mmpl7q7t.cloudfront.net/1230000000013/videos/45fa7668d9b1629bcfd124552db0821e_4.jpg']
+
+This is my fiddle:
+
