@@ -1,0 +1,663 @@
+== Create a Pop-Out Menu with CSS Transitions
+
+New to CSS3, the +transition+ property gives us a way to add animation-esque effects to elements without resorting to JavaScript. A transition by nature transforms one thing into another, and in CSS it allows us to create striking visuals and effects based on user actions. Imagine a button that fades out, or a box that expands. In this article, I'll introduce you to the basics of transitions and then I'll show you how to create a pop-out menu for your website.
+
+In the following video, I'll guide you through some of the ways the +transition+ property is being used on this very page.
+
+video::http://www.youtube.com/embed/xzGF40knOcg[width=500, height=300, posterframe='transition.png']
+
+Alright, let's jump in! Now, as with many CSS3 properties, at the time of this writing the +transition+ property wasn't fully supported in all browsers. Most browsers use a corresponding extension (like +-webkit+ or +-moz+), but Internet Explorer doesn't support it at all. If you care about your IE users, you'll need to build in a fallback behavior somehow. 
+
+Here's a chart showing you which of the major browsers support +transition+, and what extension you need to use for each.
+
+[role="chart"]
+****
+* NO
+** Internet Explorer
+* YES
+** -webkit-
+*** Chrome
+*** Safari
+** -o-
+*** Opera
+** -moz-
+*** Firefox
+****
+
+[role="popup1"]
+.Show Me More Code!
+[NOTE]
+=====================================================================
+Alright, brace yourself; this is a long one:
+
+[source, css]
+----
+div.sidebar.chart li {
+list-style-type: none;
+}
+
+div.sidebar.chart > div.itemizedlist {
+background-color: #fff;
+width: 480px;
+height: 480px;
+border: 1px solid black;
+overflow: hidden;
+}
+
+/* the NO box */
+div.sidebar.chart > div.itemizedlist > ul > li:first-of-type {
+background-color: #FFE4E1;
+font-size: .7em;
+display: block;
+border: 1px solid black;
+padding: 10px;
+float: right;
+position: relative;
+top: 0px;
+width: 150px;
+height: 150px;
+transition-property: height,width,font-size; 
+transition-duration: 1s;
+-moz-transition-property:height,width,font-size; /* Firefox 4 */
+-moz-transition-duration: 1s;
+-webkit-transition-property: height,width,font-size; /* Safari and Chrome */
+-webkit-transition-duration: 1s;
+-o-transition-property: height,width,font-size; /* Opera */
+-o-transition-duration: 1s;
+}
+
+div.sidebar.chart > div.itemizedlist > ul > li:first-of-type:hover {
+height: 300px;
+width: 300px;
+font-size: 1.5em;
+}
+
+/* the IE sub-box */
+div.sidebar.chart > div.itemizedlist > ul > li:first-of-type > div.itemizedlist > 
+ul > li {
+background-color: #D44942;
+font-size: .7em;
+text-align: center;
+padding-top: 10px;
+padding-left: 10px;
+padding-bottom: 10px;
+padding-right: 10px;
+width: 60px;
+height: 60px;
+display: block;
+border: 1px solid black;
+position: relative;
+top: 0px;
+transition-property: height,width,padding-top,font-size; 
+transition-duration: 1s;
+-moz-transition-property:height,width,padding-top,font-size; /* Firefox 4 */
+-moz-transition-duration: 1s;
+-webkit-transition-property: height,width,padding-top,font-size; /* Safari and Chrome */
+-webkit-transition-duration: 1s;
+-o-transition-property: height,width,padding-top,font-size; /* Opera */
+-o-transition-duration: 1s;
+}
+
+div.sidebar.chart > div.itemizedlist > ul > li:first-of-type > div.itemizedlist > 
+ul > li:hover {
+height: 200px;
+width: 200px;
+font-size: 1.5em;
+padding-top: 80px;
+}
+
+/* the YES box */
+div.sidebar.chart > div.itemizedlist > ul > li:nth-of-type(2) {
+background-color: #C5E3BF;
+font-size: .7em;
+padding: 10px;
+float: left;
+width: 300px;
+height: 300px;
+display: block;
+border: 1px solid black;
+position: relative;
+top: 0px;
+left: -50px;
+transition-property: height,width,font-size,top; 
+transition-duration: 1s;
+-moz-transition-property:height,width,font-size,top; /* Firefox 4 */
+-moz-transition-duration: 1s;
+-webkit-transition-property: height,width,font-size,top; /* Safari and Chrome */
+-webkit-transition-duration: 1s;
+-o-transition-property: height,width,font-size,top; /* Opera */
+-o-transition-duration: 1s;
+}
+
+div.sidebar.chart > div.itemizedlist > ul > li:nth-of-type(2):hover {
+font-size: 1.5em;
+width: 400px;
+height: 400px;
+top: -100px;
+}
+
+/* webkit sub-box */
+div.sidebar.chart > div.itemizedlist > ul > li:nth-of-type(2) > div.itemizedlist > 
+ul > li.listitem:first-of-type {
+background-color: #86C67C;
+font-size: .7em;
+padding: 10px;
+float: left;
+width: 120px;
+height: 120px;
+display: block;
+border: 1px solid black;
+position: relative;
+top: -10px;
+left: -60px;
+z-index: 1;
+transition-property: height,width,font-size,z-index; 
+transition-duration: 1s;
+-moz-transition-property:height,width,font-size,z-index; /* Firefox 4 */
+-moz-transition-duration: 1s;
+-webkit-transition-property: height,width,font-size,z-index; /* Safari and Chrome */
+-webkit-transition-duration: 1s;
+-o-transition-property: height,width,font-size,z-index; /* Opera */
+-o-transition-duration: 1s;
+}
+
+div.sidebar.chart > div.itemizedlist > ul > li:nth-of-type(2) > div.itemizedlist > 
+ul > li.listitem:first-of-type:hover {
+font-size: 1.5em;
+width: 300px;
+height: 300px;
+z-index: 100;
+}
+
+/* chrome sub-sub-box */
+div.sidebar.chart > div.itemizedlist > ul > 
+li:nth-of-type(2) > div.itemizedlist > ul > 
+li.listitem:first-of-type li.listitem:first-of-type {
+background-color: #699864;
+font-size: .7em;
+padding-top: 10px;
+padding-left: 10px;
+padding-bottom: 10px;
+padding-right: 10px;
+display: block;
+position: absolute;
+top: 30%;
+left: 10px;
+border: 1px solid black;
+width: 50px;
+height: 50px;
+transition-property: height,width,padding-top,font-size; 
+transition-duration: 1s;
+-moz-transition-property:height,width,padding-top,font-size; /* Firefox 4 */
+-moz-transition-duration: 1s;
+-webkit-transition-property: height,width,padding-top,font-size; /* Safari and Chrome */
+-webkit-transition-duration: 1s;
+-o-transition-property: height,width,padding-top,font-size; /* Opera */
+-o-transition-duration: 1s;
+}
+
+div.sidebar.chart > div.itemizedlist > ul > 
+li:nth-of-type(2) > div.itemizedlist > ul > 
+li.listitem:first-of-type li.listitem:first-of-type:hover {
+height: 100px;
+width: 100px;
+font-size: 1.5em;
+padding-top: 40px;
+}
+
+/* safari sub-sub-box */
+div.sidebar.chart > div.itemizedlist > ul > 
+li:nth-of-type(2) > div.itemizedlist > ul > 
+li.listitem:first-of-type li.listitem:nth-of-type(2) {
+background-color: #458B74;
+font-size: .7em;
+padding-top: 10px;
+padding-left: 10px;
+padding-bottom: 10px;
+padding-right: 10px;
+display: block;
+position: absolute;
+top: 10px;
+right: 5px;
+border: 1px solid black;
+width: 50px;
+height: 50px;
+transition-property: height,width,padding-top,font-size; 
+transition-duration: 1s;
+-moz-transition-property:height,width,padding-top,font-size; /* Firefox 4 */
+-moz-transition-duration: 1s;
+-webkit-transition-property: height,width,padding-top,font-size; /* Safari and Chrome */
+-webkit-transition-duration: 1s;
+-o-transition-property: height,width,padding-top,font-size; /* Opera */
+-o-transition-duration: 1s;
+}
+
+div.sidebar.chart > div.itemizedlist > ul > 
+li:nth-of-type(2) > div.itemizedlist > ul > 
+li.listitem:first-of-type li.listitem:nth-of-type(2):hover {
+height: 100px;
+width: 100px;
+font-size: 1.5em;
+padding-top: 40px;
+}
+
+/* -o- sub-box */
+div.sidebar.chart > div.itemizedlist > ul > li:nth-of-type(2) > div.itemizedlist > 
+ul > li.listitem:nth-of-type(2) {
+background-color: #66CDAA;
+font-size: .7em;
+padding: 10px;
+float: right;
+width: 120px;
+height: 120px;
+display: block;
+border: 1px solid black;
+position: absolute;
+top: 20px;
+right: 20px;
+z-index: 2;
+transition-property: height,width,font-size,z-index; 
+transition-duration: 1s;
+-moz-transition-property:height,width,font-size,z-index; /* Firefox 4 */
+-moz-transition-duration: 1s;
+-webkit-transition-property: height,width,font-size,z-index; /* Safari and Chrome */
+-webkit-transition-duration: 1s;
+-o-transition-property: height,width,font-size,z-index; /* Opera */
+-o-transition-duration: 1s;
+}
+
+div.sidebar.chart > div.itemizedlist > ul > li:nth-of-type(2) > div.itemizedlist > 
+ul > li.listitem:nth-of-type(2):hover {
+font-size: 1.5em;
+width: 300px;
+height: 300px;
+z-index: 100;
+}
+
+/* Opera sub-sub-box */
+div.sidebar.chart > div.itemizedlist > ul > 
+li:nth-of-type(2) > div.itemizedlist > 
+ul > li.listitem:nth-of-type(2) li.listitem {
+background-color: #238E68;
+font-size: .7em;
+padding-top: 10px;
+padding-left: 10px;
+padding-bottom: 10px;
+padding-right: 10px;
+display: block;
+position: absolute;
+bottom: 20%;
+left: 20px;
+border: 1px solid black;
+width: 50px;
+height: 50px;
+transition-property: height,width,padding-top,font-size; 
+transition-duration: 1s;
+-moz-transition-property:height,width,padding-top,font-size; /* Firefox 4 */
+-moz-transition-duration: 1s;
+-webkit-transition-property: height,width,padding-top,font-size; /* Safari and Chrome */
+-webkit-transition-duration: 1s;
+-o-transition-property: height,width,padding-top,font-size; /* Opera */
+-o-transition-duration: 1s;
+}
+
+div.sidebar.chart > div.itemizedlist > ul > 
+li:nth-of-type(2) > div.itemizedlist > 
+ul > li.listitem:nth-of-type(2) li.listitem:hover {
+height: 100px;
+width: 100px;
+font-size: 1.5em;
+padding-top: 40px;
+}
+
+/* -moz sub-box */
+div.sidebar.chart > div.itemizedlist > ul > li:nth-of-type(2) > div.itemizedlist > 
+ul > li.listitem:nth-of-type(3) {
+background-color: #92CCA6;
+font-size: .7em;
+padding: 10px;
+float: left;
+width: 120px;
+height: 120px;
+display: block;
+border: 1px solid black;
+position: absolute;
+bottom: 0px;
+left: 50px;
+z-index: 3;
+transition-property: height,width,font-size,z-index; 
+transition-duration: 1s;
+-moz-transition-property:height,width,font-size,z-index; /* Firefox 4 */
+-moz-transition-duration: 1s;
+-webkit-transition-property: height,width,font-size,z-index; /* Safari and Chrome */
+-webkit-transition-duration: 1s;
+-o-transition-property: height,width,font-size,z-index; /* Opera */
+-o-transition-duration: 1s;
+}
+
+div.sidebar.chart > div.itemizedlist > ul > 
+li:nth-of-type(2) > div.itemizedlist > 
+ul > li.listitem:nth-of-type(3):hover {
+font-size: 1.5em;
+width: 300px;
+height: 300px;
+z-index: 100;
+}
+
+/* firefox sub-sub-box */
+div.sidebar.chart > div.itemizedlist > ul > 
+li:nth-of-type(2) > div.itemizedlist > 
+ul > li.listitem:nth-of-type(3) li.listitem {
+background-color: #78A489;
+font-size: .7em;
+padding-top: 10px;
+padding-left: 10px;
+padding-bottom: 10px;
+padding-right: 10px;
+display: block;
+position: absolute;
+bottom: 20px;
+right: 5px;
+border: 1px solid black;
+width: 50px;
+height: 50px;
+transition-property: height,width,padding-top,font-size; 
+transition-duration: 1s;
+-moz-transition-property:height,width,padding-top,font-size; /* Firefox 4 */
+-moz-transition-duration: 1s;
+-webkit-transition-property: height,width,padding-top,font-size; /* Safari and Chrome */
+-webkit-transition-duration: 1s;
+-o-transition-property: height,width,padding-top,font-size; /* Opera */
+-o-transition-duration: 1s;
+}
+
+div.sidebar.chart > div.itemizedlist > ul > 
+li:nth-of-type(2) > div.itemizedlist > 
+ul > li.listitem:nth-of-type(3) li.listitem:hover {
+height: 100px;
+width: 100px;
+font-size: 1.5em;
+padding-top: 40px;
+}
+----
+=====================================================================
+
+=== Transition Basics 
+
+There are four options in the transition property, which you can specify all at once with the shorthand property transition. Piecemeal, your options are:
+
+transition-property::
+    Which property should change when the user hovers over the element. See http://www.w3schools.com/cssref/css3_pr_transition-property.asp["Transition Property" on W3Schools]
+transition-duration::
+    How long it takes for the transition to complete, from start to finish (default: 0). See http://www.w3schools.com/cssref/css3_pr_transition-duration.asp["Transition Duration" on W3Schools]
+transition-timing-function::
+    Allows you to change the speed arc as the transition progresses; for example, the transition speeds up as it progresses (ease-in) or slows down (ease-out) (default: "ease"). See http://www.w3schools.com/cssref/css3_pr_transition-timing-function.asp["Transition Timing Function" on W3Schools]
+transition-delay::
+    How much of a pause to add before the transition begins (default: 0). See http://www.w3schools.com/cssref/css3_pr_transition-delay.asp["Transition Delay" on W3Schools]
+
+Try http://orm-social-book-poc.herokuapp.com/books/1230000000917/ch01.xhtml#hover_over_the_[choosing from the different values in the code] below to get a sense of how each property works.
+
+[role="coderunner1"]
+.Try It!
+****
+The button below is set to transition, with values as follows:
+
+[source, css]
+----
+transition-property: opacity;
+transition-duration: 1s;
+transition-timing-function: ease;
+transition-delay: 1s;
+----
+
+[role="popup1"]
+.Show Me More Code!
+[NOTE]
+=====================================================================
+Here's the full css code that this button is using:
+[source, css]
+----
+.sidebar.coderunner1 .button1 {
+border: 1px solid red;
+width: 300px;
+background-color: #FFE4E1;
+opacity: .2;
+transition-property: opacity;
+transition-duration: 1s;
+transition-timing-function: ease;
+transition-delay: 0s;
+-moz-transition-property: opacity; /* Firefox 4 */
+-moz-transition-duration: 1s;
+-moz-transition-timing-function: ease;
+-moz-transition-delay: 0s;
+-webkit-transition-property: opacity; /* Safari and Chrome */
+-webkit-transition-duration: 1s;
+-webkit-transition-timing-function: ease;
+-webkit-transition-delay: 0s;
+-o-transition-property: opacity; /* Opera */
+-o-transition-duration: 1s;
+-o-transition-timing-function: ease;
+-o-transition-delay: 0s;
+}
+
+.sidebar.coderunner1 .button1:hover {
+color: #fff;
+width: 150px;
+background-color: #555555;
+opacity: 1;
+}
+----
+=====================================================================
+
+Hover over the button and see what happens:
+
+[role="button1"]
+Hover Over Me
+
+Now try choosing different combinations of the values below, and see how that changes the transition effect:
+
+[role="style1link"]
+link:#hover_over_the_[transition-property: width;]
+
+[role="style2link"]
+link:#hover_over_the_[transition-property: background-color;]
+
+[role="style3link"]
+link:#hover_over_the_[transition-duration: 2s;]
+
+[role="style4link"]
+link:#hover_over_the_[transition-duration: 4s;]
+
+[role="style5link"]
+link:#hover_over_the_[transition-timing-function: ease-out;]
+
+[role="style6link"]
+link:#hover_over_the_[transition-timing-function: ease-in-out;]
+
+[role="style7link"]
+link:#hover_over_the_[transition-delay: 2s;]
+
+[role="style8link"]
+link:#hover_over_the_[transition-delay: 4s;]
+
+[role="reset"]
+link:#hover_over_the_[Reset]
+****
+
+To define all the properties at once in shorthand, you'd type the following:
+
+[source, css]
+----
+transition: opacity 1s ease 1s;
+----
+
+=== Building the Pop-Out Menu
+
+Alright, enough background; let's get to work! For our menu, we want to transition several properties at once. We're going to start with a box that sits almost entirely off the page, and is invisible. When the user hovers over the visual cue (an arrow in this example), the box slides out from the edge of the page and fades into focus.
+
+The properties we want to transition, therefore, are margin-left and opacity. We'll start with a negative left margin, which will pull the element off the page, and an opacity of 0 (invisible). Then, on hover, we'll change to a positive-value margin, and an opacity of .9. This will make the menu sit on top of the page, but still let users see the text behind the menu. To specify two properties to transition, declare them both in the transition-property element, separated by commas, like this:
+
+[source, css]
+----
+transition-property: margin-left,opacity; 
+----
+
+We want the transition to be nice and smooth, so we're going to leave the +transition-timing-function+ at the default of "ease", and we want our menu to come in pretty quickly, and without any kind of delay, so we'll leave the +transition-delay+ at the default "0" and give it a +transition-duration+ of 1 second:
+
+[source, css]
+----
+transition-duration: 1s; 
+----
+
+Now, because of the browser support issues we discussed earlier, we need to make sure to specify the corresponding properties for the different extensions:
+
+[source, css]
+----
+-moz-transition-property: margin-left,opacity; /* Firefox 4 */
+-moz-transition-duration: 1s;
+-webkit-transition-property: margin-left,opacity; /* Safari and Chrome */
+-webkit-transition-duration: 1s;
+-o-transition-property: margin-left,opacity; /* Opera */
+-o-transition-duration: 1s;
+----
+
+Here's the complete css for the transition:
+
+[source, css]
+----
+div.sidebar.final div.note:nth-child(3) {
+background-color: #fff;
+padding: 10px 20px 10px 20px;
+border: 2px solid #00B2EE;
+opacity: 0;
+position: absolute;
+top: 30px;
+width: 380px;
+height: auto;
+max-height: 600px;
+padding: 10px 40px 10px 20px;
+margin-left: -320px;
+border-radius:10px;
+overflow-y: scroll;
+transition-property: margin-left,opacity; 
+transition-duration: 1s;
+-moz-transition-property: margin-left,opacity; /* Firefox 4 */
+-moz-transition-duration: 1s;
+-webkit-transition-property: margin-left,opacity; /* Safari and Chrome */
+-webkit-transition-duration: 1s;
+-o-transition-property: margin-left,opacity; /* Opera */
+-o-transition-duration: 1s;
+}
+
+div.sidebar.final div.note:nth-child(3):hover {
+opacity: .9;
+margin-left: 30px;
+}
+----
+
+And http://orm-social-book-poc.herokuapp.com/books/1230000000917/ch01.xhtml#location_one_su[check it out in action here]. Hover over the arrow to see our menu slide out.
+
+[role="final"]
+****
+[role="contents"]
+[NOTE]
+=====================================================================
+
+=====================================================================
+
+[role="contents-body"]
+[NOTE]
+=====================================================================
+* Location One
+** Subsection
+* Location Two
+* Location Three
+** Subsection
+* Location Four
+=====================================================================
+****
+
+[role="popup1"]
+.Show Me More Code!
+[NOTE]
+=====================================================================
+Here's all the css I used to style the arrow and the pop out menu box:
+[source, css]
+----
+div.sidebar.final {
+min-height: 200px;
+overflow: visible;
+}
+
+div.sidebar.final > div.note:nth-child(2) {
+background-image: url('images/arrow3.png');
+background-repeat: no-repeat;
+background-position: left top;
+background-size: 70px;
+width: 200px;
+min-height: 80px;
+}
+
+div.sidebar.final div.note:nth-child(3) {
+background-color: #fff;
+padding: 10px 20px 10px 20px;
+border: 2px solid #00B2EE;
+opacity: 0;
+position: absolute;
+top: 30px;
+width: 380px;
+height: auto;
+max-height: 600px;
+padding: 10px 40px 10px 20px;
+margin-left: -320px;
+border-radius:10px;
+overflow-y: scroll;
+transition-property: margin-left,opacity; 
+transition-duration: 1s;
+-moz-transition-property: margin-left,opacity; /* Firefox 4 */
+-moz-transition-duration: 1s;
+-webkit-transition-property: margin-left,opacity; /* Safari and Chrome */
+-webkit-transition-duration: 1s;
+-o-transition-property: margin-left,opacity; /* Opera */
+-o-transition-duration: 1s;
+}
+
+div.sidebar.final div.note:nth-child(3):hover {
+opacity: .9;
+margin-left: 30px;
+}
+
+div.sidebar.final ul {
+margin-top: 0;
+padding-top: 0;
+margin-left: 0;
+margin-bottom: 0;
+padding-bottom: 0;
+}
+
+div.sidebar.final ul li {
+list-style-type: none;
+list-style-position: outside;
+margin-left: 0;
+padding: 0px 0 0px 0;
+margin-bottom: 0;
+margin-top: 0;
+}
+
+div.sidebar.final div.note div.itemizedlist {
+padding: 0;
+margin: 0;
+}
+
+div.sidebar.final div.note > div.itemizedlist > ul.itemizedlist > li.listitem {
+border-bottom: 1px solid #00B2EE;
+}
+
+div.sidebar.final div.note p.simpara {
+padding: 0;
+margin: 0;
+}
+----
+=====================================================================
+
+And that's it! Now that you have a sense of how transitions work in CSS, play with different combinations to see what kinds of effects you can create. Bon appetit!
