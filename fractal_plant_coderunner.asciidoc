@@ -1,4 +1,4 @@
-== Create fractal plants with processing
+== Embedded processingjs sketch
 
 "Fractal" is the broad name for a whole class of recursively defined mathematical objects that range from psychedelic ((Mandelbrot Sets)) to ornate Koch Snowflakes. Despite their geometric complexity and intimidating-sounding math, fractals are surprisingly simple, and are almost always based on a few easy rules. This article shows you a quick Processing script that generates a fractal-like plant that looks something like this:
 
