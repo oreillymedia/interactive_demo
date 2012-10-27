@@ -1,5 +1,5 @@
 [[_make_the_gadget_3]]
-=== Embedded Private Video
+== Embedded Private Video
 
 To make this device, we’ll start by constructing the probe that you’ll dip into water samples to get a conductivity reading—which we created by repurposing a binding post (link:$$http://www.radioshack.com/product/index.jsp?productId=2102838$$[Radio Shack catalog #274-718])  typically used in home audio/video and ham radio electronics. Here's how the circuits will look when it's complete:
 
