@@ -1,0 +1,7 @@
+:bookseries: maker
+
+= Interactive Samples
+
+include::sample1.asciidoc[]
+
+include::sample2.asciidoc[]
