@@ -3,7 +3,7 @@
 
 To make this device, we’ll start by constructing the probe that you’ll dip into water samples to get a conductivity reading—which we created by repurposing a binding post (link:$$http://www.radioshack.com/product/index.jsp?productId=2102838$$[Radio Shack catalog #274-718])  typically used in home audio/video and ham radio electronics. Here's how the circuits will look when it's complete:
 
-video::http://d386p6mmpl7q7t.cloudfront.net/1230000000013/videos/45fa7668d9b1629bcfd124552db0821e.mp4[poster='http://d386p6mmpl7q7t.cloudfront.net/1230000000013/videos/45fa7668d9b1629bcfd124552db0821e_4.jpg']
+video::http://d386p6mmpl7q7t.cloudfront.net/1230000000013/videos/45fa7668d9b1629bcfd124552db0821e.mp4[ width="500px" height="300px" poster='http://d386p6mmpl7q7t.cloudfront.net/1230000000013/videos/45fa7668d9b1629bcfd124552db0821e_4.jpg']
 
 It may seem like a complicated build on first glance, because there are several steps involved.  But it’s mostly a straightforward matter of connecting wires to the binding post—as you can see in the photo of the finished probe.
 
@@ -18,11 +18,7 @@ So how can we say that water is not very conductive?
 Well, it’s all relative.  Compared to air, water is highly conductive. One reason lightning bolts are so powerful is that they need enormous energy to overcome the electrical resistance of the air. However, when compared to metal, which conducts electricity extremely well, water is so resistant that it is practically an insulator.
 ****
 
-
-
-[[_parts_5]]
-=== Parts
-
+The parts list is:
 
 . Arduino
 . Breadboard
@@ -37,15 +33,6 @@ Well, it’s all relative.  Compared to air, water is highly conductive. One rea
 . Distilled water (can be purchased at some pharmacies or health food stores)
 
 
-
-[[_construct_the_probe]]
-=== Construct the Probe
-
-Check your work by comparing it to the photo of a completed probe (<<h2oprobe>>).
-
-[[h2oprobe]]
-.The probe!
-image::images/emwa_0501.png[scaledwidth="90%"]
 
 
 
