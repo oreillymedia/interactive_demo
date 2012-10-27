@@ -1,0 +1,21 @@
+== Create fractal plants with processing
+
+"Fractal" is the broad name for a whole class of recursively defined mathematical objects that range from psychedelic ((Mandelbrot Sets)) to ornate Koch Snowflakes. Despite their geometric complexity and intimidating-sounding math, fractals are surprisingly simple, and are almost always based on a few easy rules. This article shows you a quick Processing script that generates a fractal-like plant that looks something like this:
+
+image::images/plant.png[]
+
+Each "plant" begins as a straight line. This line is replaced with a new "branch" that consists of the original line plus 3-4 new alternating branches. (The exact number of branches is determined by a variable you can set). This same process is applied recursively for each new branch, up to a depth you specify. The following figure illustrates the basic idea:
+
+image::images/recurs_step.png[]
+
+Lines are represented as vectors. A ((vector)) consists of an origin point defined by the variables x and y, a length defined by the variable r, and an angle defined by the variable theta. The following figure shows how these variables are related: 
+
+image::images/vectors.png[]
+
+Here's the code
+
+[source, processingjslive]
+----
+include::plant.pde[]
+----
+
