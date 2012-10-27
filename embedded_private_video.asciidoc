@@ -1,8 +1,52 @@
-== Embedded Video Sample
+[[_make_the_gadget_3]]
+=== Make the Gadget
 
-This is my video:
+To make this device, we’ll start by constructing the probe that you’ll dip into water samples to get a conductivity reading—which we created by repurposing a binding post (link:$$http://www.radioshack.com/product/index.jsp?productId=2102838$$[Radio Shack catalog #274-718])  typically used in home audio/video and ham radio electronics. Here's how the circuits will look when it's complete:
 
 video::http://d386p6mmpl7q7t.cloudfront.net/1230000000013/videos/45fa7668d9b1629bcfd124552db0821e.mp4[poster='http://d386p6mmpl7q7t.cloudfront.net/1230000000013/videos/45fa7668d9b1629bcfd124552db0821e_4.jpg']
+
+It may seem like a complicated build on first glance, because there are several steps involved.  But it’s mostly a straightforward matter of connecting wires to the binding post—as you can see in the photo of the finished probe.
+
+
+[[I_sidebar5_d1e1345]]
+.Water and Electricity Don’t Mix…Right?
+****
+All our lives we’ve been told to keep water and electricity far apart for our safety. Lifeguards order swimmers out of the water when lightning threatens.  Electricians wire bathroom power outlets especially to prevent water-based electric shocks. We’re told not to drive through flooded streets if there are downed power lines in the water.
+
+So how can we say that water is not very conductive?
+
+Well, it’s all relative.  Compared to air, water is highly conductive. One reason lightning bolts are so powerful is that they need enormous energy to overcome the electrical resistance of the air. However, when compared to metal, which conducts electricity extremely well, water is so resistant that it is practically an insulator.
+****
+
+
+
+[[_parts_5]]
+==== Parts
+
+
+. Arduino
+. Breadboard
+. 10K resistor
+. 8-ohm speaker
+. 4Char display
+. Chassis-mount dual female binding post (RadioShack catalog #274-718)
+. Jumper wires in various colors
+. Several feet of insulated solid core wire
+. Small piece of aluminum foil
+. 4-inch adjustable wrench
+. Distilled water (can be purchased at some pharmacies or health food stores)
+
+
+
+[[_construct_the_probe]]
+==== Construct the Probe
+
+Check your work by comparing it to the photo of a completed probe (<<h2oprobe>>).
+
+[[h2oprobe]]
+.The probe!
+image::images/emwa_0501.png[scaledwidth="90%"]
+
 
 
 
