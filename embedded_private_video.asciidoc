@@ -21,7 +21,7 @@ Well, it’s all relative.  Compared to air, water is highly conductive. One rea
 
 
 [[_parts_5]]
-==== Parts
+=== Parts
 
 
 . Arduino
@@ -39,7 +39,7 @@ Well, it’s all relative.  Compared to air, water is highly conductive. One rea
 
 
 [[_construct_the_probe]]
-==== Construct the Probe
+=== Construct the Probe
 
 Check your work by comparing it to the photo of a completed probe (<<h2oprobe>>).
 
