@@ -2,8 +2,7 @@
 
 Tinkercad is a simple to use web-based 3D modeler that allows you to build models quickly using a variety of geometric shapes and three basic tools: Add, Subtract and Workplane. It also has the ability to import STL files to create mashups.  Tinkercad allows you to download a STL to print an item yourself and also has partnerships with a several 3D printing services: Shapeways, i.materialize, Ponoko and sculpteo.
 
-
-
+thingiview::assets/Nautilus_Gear.STL[width="100%", height="300px"]
 
 The quickest way to get acquainted with Tinkercad is to go through the built in tutorials or Quests, located under the "learning" tab.   
 
