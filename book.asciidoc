@@ -10,4 +10,4 @@ include::embedded_3d_model.asciidoc[]
 
 include::fractal_plant_coderunner.asciidoc[]
 
-include::ship.asciidoc[]
+include::astrobot.asciidoc[]
