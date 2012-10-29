@@ -1,6 +1,0 @@
-== Astro Bot
-
-thingiview::assets/bigSigma.stl[width="100%", height="300px"]
-
-
-
