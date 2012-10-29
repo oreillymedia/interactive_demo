@@ -1,4 +1,5 @@
 == Astro Bot
 
-thingiview::assets/AstroBotM_010.stl[width="100%", height="500px"]
+thingiview::assets/AstroBotM_010.stl[width="100%", height="300px"]
+
 
