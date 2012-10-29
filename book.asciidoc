@@ -9,3 +9,5 @@ include::css_transitions_with_embedded_youtube.asciidoc[]
 include::embedded_3d_model.asciidoc[]
 
 include::fractal_plant_coderunner.asciidoc[]
+
+include::ship.asciidoc[]
