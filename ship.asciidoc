@@ -1,0 +1,3 @@
+== Embedded 3D Model (direct)
+
+thingiview::assets/ship.stl[width="100%", height="300px"]
