@@ -382,8 +382,6 @@ padding-top: 40px;
 ----
 =====================================================================
 
-=== Transition Basics 
-
 There are four options in the transition property, which you can specify all at once with the shorthand property transition. Piecemeal, your options are:
 
 transition-property::
@@ -491,7 +489,6 @@ To define all the properties at once in shorthand, you'd type the following:
 transition: opacity 1s ease 1s;
 ----
 
-=== Building the Pop-Out Menu
 
 Alright, enough background; let's get to work! For our menu, we want to transition several properties at once. We're going to start with a box that sits almost entirely off the page, and is invisible. When the user hovers over the visual cue (an arrow in this example), the box slides out from the edge of the page and fades into focus.
 
