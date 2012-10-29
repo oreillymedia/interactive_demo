@@ -1,5 +1,6 @@
 == Astro Bot
 
-thingiview::assets/AstroBotM_010.stl[width="100%", height="300px"]
+thingiview::assets/bigSigma.stl[width="100%", height="300px"]
+
 
 
