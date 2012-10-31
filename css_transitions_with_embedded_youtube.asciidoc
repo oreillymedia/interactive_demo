@@ -10,19 +10,8 @@ Alright, let's jump in! Now, as with many CSS3 properties, at the time of this w
 
 Here's a chart showing you which of the major browsers support +transition+, and what extension you need to use for each.
 
-[role="chart"]
-****
-* NO
-** Internet Explorer
-* YES
-** -webkit-
-*** Chrome
-*** Safari
-** -o-
-*** Opera
-** -moz-
-*** Firefox
-****
+jsfiddle::http://jsfiddle.net/odewahn/F7P2J/embedded/result/[width="100%", height="300px"]
+
 
 [role="popup1"]
 .Show Me More Code!
