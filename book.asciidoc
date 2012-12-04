@@ -9,3 +9,9 @@ include::embedded_3d_model.asciidoc[]
 include::embedded_private_video.asciidoc[]
 
 include::fractal_plant_coderunner.asciidoc[]
+
+include::jsfiddle_demo.asciidoc[]
+
+include::math_ml_samples.asciidoc[]
+
+include::question_solution.asciidoc[]
