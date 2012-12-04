@@ -1,0 +1,78 @@
+== Tables
+
+A table is a grid of information with the following structure:
+
+* An optional _title_.  You should put something descriptive here
+* An optional _option list_.  Common options include:
+** *header*.  Sets the first row as a header.
+** *footer*.  Sets the last row as a footer.
+** *width=<value>*.  Sets the width of the table across the page
+* The line "|==========================="
+* Table entries, with each row separated with "|"
+* The line "|==========================="
+
+Here's an example for a fairly typical table:
+
+[source, asciidoc]
+----
+.Top Customers
+[options = "header"]
+|==================================
+| First Name | Last Name   | Units
+| Fred       | Flinttone   | 100
+| Barney     | Rubble      | 99
+| Wilma      | Flintsone   | 95
+===================================
+----
+
+
+==== Excercise 1
+
+
+Create a table that looks like this:
+
+.ORM Employees
+[options="header"]
+|=======================
+|First|Last
+|Sanders|Kleinfeld
+|Karen|Tripp
+|Adam|Zaremba
+|=======================
+
+Write your solution here:
+
+[condition="editable"]
+[source, asciidoc]
+----
+First Last
+Sanders Kleinfeld
+Karen Tripp
+Adam Zaremba
+----
+
+
+[role="solution"]
+.Solution
+****
+Your markup should look something like this:
+
+----
+.ORM Employees
+[options="header"]
+|=======================
+|First   | Last
+|Sanders | Kleinfeld
+|Karen   | Tripp
+|Adam    | Zaremba
+|=======================
+----
+
+****
+
+
+
+==== Tips
+
+* Tables look best when you have fewer than 5 columns.  If you have more than 5, the table will either spill off the page/screen, or the columen will be so small that they will be too tiny. 
+* You can use Atlas' table helper to create tables with a GUI helper.  Highlighting the table and clicking the table button will allow you to edit it in the helper.
