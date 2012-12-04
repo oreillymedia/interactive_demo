@@ -1,0 +1,1015 @@
+= Antenna House Stress Test
+
+== Antenna House Stress Test
+
+This section is intended as a "test" to see how well AH can handle complex MathML for different kinds of equations. The following equations are taken from the http://www.mozilla.org/projects/mathml/demo/texvsmml.html[MathML Torture Test].
+
+Greek: α β γ ψ ω ϑ ϒ ϖ ᾁ Γ Δ δ ϝ θ λ Ξ ξ π Σ σ ς φ χ Ψ Ώ ᾦ
+
+Math symbols: ÷ × ± ≤ ≠ ≈ ≣ ∅ ∈ ∛ Δ Ω ⊆ ∫ ∂ ∴ ℵ₀
+
+Letter symbols: ∞ ℵ ℘ ℑ ℜ 𝔅 𝔼 𝔽 𝔵 𝔶 ℬ ℰ ℱ ℋ ℐ ℒ ℳ ℘ ℛ ℯ ℓ ℊ ℴ
+
+++++
+<equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:msup>
+    <mml:mi>x</mml:mi>
+    <mml:mn>2</mml:mn>
+  </mml:msup>
+  <mml:msup>
+    <mml:mi>y</mml:mi>
+    <mml:mn>2</mml:mn>
+  </mml:msup>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation>
+<title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:mmultiscripts>
+    <mml:mi>F</mml:mi>
+    <mml:mn>3</mml:mn><mml:none/>
+    <mml:mprescripts/>
+    <mml:mn>2</mml:mn><mml:none/>
+  </mml:mmultiscripts>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation>
+<title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:mfrac>
+    <mml:mrow>
+      <mml:mi>x</mml:mi>
+      <mml:mo>+</mml:mo>
+      <mml:msup>
+        <mml:mi>y</mml:mi>
+        <mml:mn>2</mml:mn>
+      </mml:msup>
+    </mml:mrow>
+    <mml:mrow>
+      <mml:mi>k</mml:mi>
+      <mml:mo>+</mml:mo>
+      <mml:mn>1</mml:mn>
+    </mml:mrow>
+  </mml:mfrac>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation>
+<title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:mi>x</mml:mi>
+  <mml:mo>+</mml:mo>
+  <mml:msup>
+    <mml:mi>y</mml:mi>
+    <mml:mfrac>
+      <mml:mn>2</mml:mn>
+      <mml:mrow>
+        <mml:mi>k</mml:mi>
+        <mml:mo>+</mml:mo>
+        <mml:mn>1</mml:mn>
+      </mml:mrow>
+    </mml:mfrac>
+  </mml:msup>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation>
+<title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:mfrac>
+    <mml:mi>a</mml:mi>
+    <mml:mrow>
+      <mml:mi>b</mml:mi>
+      <mml:mo>/</mml:mo>
+      <mml:mn>2</mml:mn>
+    </mml:mrow>
+  </mml:mfrac>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation>
+<title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:msub>
+    <mml:mi>a</mml:mi>
+    <mml:mn>0</mml:mn>
+  </mml:msub>
+  <mml:mo>+</mml:mo>
+  <mml:mfrac>
+    <mml:mn>1</mml:mn>
+    <mml:mstyle displaystyle="true" scriptlevel="0">
+      <mml:msub>
+        <mml:mi>a</mml:mi>
+        <mml:mn>1</mml:mn>
+      </mml:msub>
+      <mml:mo>+</mml:mo>
+      <mml:mfrac>
+        <mml:mn>1</mml:mn>
+        <mml:mstyle displaystyle="true" scriptlevel="0">
+          <mml:msub>
+            <mml:mi>a</mml:mi>
+            <mml:mn>2</mml:mn>
+          </mml:msub>
+          <mml:mo>+</mml:mo>
+          <mml:mfrac>
+            <mml:mn>1</mml:mn>
+            <mml:mstyle displaystyle="true" scriptlevel="0">
+              <mml:msub>
+                <mml:mi>a</mml:mi>
+                <mml:mn>3</mml:mn>
+              </mml:msub>
+              <mml:mo>+</mml:mo>
+              <mml:mfrac>
+                <mml:mn>1</mml:mn>
+                <mml:mstyle displaystyle="true" scriptlevel="0">
+                  <mml:msub>
+                    <mml:mi>a</mml:mi>
+                    <mml:mn>4</mml:mn>
+                  </mml:msub>
+                </mml:mstyle>
+              </mml:mfrac>
+            </mml:mstyle>
+          </mml:mfrac>
+        </mml:mstyle>
+      </mml:mfrac>
+    </mml:mstyle>
+  </mml:mfrac>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:msub>
+    <mml:mi>a</mml:mi>
+    <mml:mn>0</mml:mn>
+  </mml:msub>
+  <mml:mo>+</mml:mo>
+  <mml:mfrac>
+    <mml:mn>1</mml:mn>
+    <mml:mrow>
+      <mml:msub>
+        <mml:mi>a</mml:mi>
+        <mml:mn>1</mml:mn>
+      </mml:msub>
+      <mml:mo>+</mml:mo>
+      <mml:mfrac>
+        <mml:mn>1</mml:mn>
+        <mml:mrow>
+          <mml:msub>
+            <mml:mi>a</mml:mi>
+            <mml:mn>2</mml:mn>
+          </mml:msub>
+          <mml:mo>+</mml:mo>
+          <mml:mfrac>
+            <mml:mn>1</mml:mn>
+            <mml:mrow>
+              <mml:msub>
+                <mml:mi>a</mml:mi>
+                <mml:mn>3</mml:mn>
+              </mml:msub>
+              <mml:mo>+</mml:mo>
+              <mml:mfrac>
+                <mml:mn>1</mml:mn>
+                <mml:mrow>
+                  <mml:msub>
+                    <mml:mi>a</mml:mi>
+                    <mml:mn>4</mml:mn>
+                  </mml:msub>
+                </mml:mrow>
+              </mml:mfrac>
+            </mml:mrow>
+          </mml:mfrac>
+        </mml:mrow>
+      </mml:mfrac>
+    </mml:mrow>
+  </mml:mfrac>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:mo>(</mml:mo>
+  <mml:mfrac linethickness="0">
+    <mml:mi>n</mml:mi>
+    <mml:mrow>
+      <mml:mi>k</mml:mi>
+      <mml:mo>/</mml:mo>
+      <mml:mn>2</mml:mn>
+    </mml:mrow>
+  </mml:mfrac>
+  <mml:mo>)</mml:mo>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:mrow>
+    <mml:mo>(</mml:mo>
+    <mml:mfrac linethickness="0">
+      <mml:mi>p</mml:mi>
+      <mml:mn>2</mml:mn>
+    </mml:mfrac>
+    <mml:mo>)</mml:mo>
+  </mml:mrow>
+  <mml:msup>
+    <mml:mi>x</mml:mi>
+    <mml:mn>2</mml:mn>
+  </mml:msup>
+  <mml:msup>
+    <mml:mi>y</mml:mi>
+    <mml:mrow>
+      <mml:mi>p</mml:mi>
+      <mml:mo>-</mml:mo>
+      <mml:mn>2</mml:mn>
+    </mml:mrow>
+  </mml:msup>
+  <mml:mo>-</mml:mo>
+  <mml:mfrac>
+    <mml:mn>1</mml:mn>
+    <mml:mrow>
+      <mml:mn>1</mml:mn>
+      <mml:mo>-</mml:mo>
+      <mml:mi>x</mml:mi>
+    </mml:mrow>
+  </mml:mfrac>
+  <mml:mfrac>
+    <mml:mn>1</mml:mn>
+    <mml:mrow>
+      <mml:mn>1</mml:mn>
+      <mml:mo>-</mml:mo>
+      <mml:msup>
+        <mml:mi>x</mml:mi>
+        <mml:mn>2</mml:mn>
+      </mml:msup>
+    </mml:mrow>
+  </mml:mfrac>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:munder>
+    <mml:mo>∑</mml:mo>
+    <mml:mrow>
+      <mml:mfrac linethickness="0">
+        <mml:mrow>
+          <mml:mn>0</mml:mn>
+          <mml:mo>≤</mml:mo>
+          <mml:mi>i</mml:mi>
+          <mml:mo>≤</mml:mo>
+          <mml:mi>m</mml:mi>
+        </mml:mrow>
+        <mml:mrow>
+          <mml:mn>0</mml:mn>
+          <mml:mo>&lt;</mml:mo>
+          <mml:mi>j</mml:mi>
+          <mml:mo>&lt;</mml:mo>
+          <mml:mi>n</mml:mi>
+        </mml:mrow>
+      </mml:mfrac>
+    </mml:mrow>
+  </mml:munder>
+  <mml:mi>P</mml:mi>
+  <mml:mo stretchy="false">(</mml:mo>
+  <mml:mi>i</mml:mi>
+  <mml:mo>,</mml:mo>
+  <mml:mi>j</mml:mi>
+  <mml:mo stretchy="false">)</mml:mo>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+<mml:msup>
+  <mml:mi>x</mml:mi>
+  <mml:mrow>
+    <mml:mn>2</mml:mn>
+    <mml:mi>y</mml:mi>
+  </mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:math>
+
+</equation>
+<equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:munderover>
+    <mml:mo>∑</mml:mo>
+    <mml:mrow>
+      <mml:mi>i</mml:mi>
+      <mml:mo>=</mml:mo>
+      <mml:mn>1</mml:mn>
+    </mml:mrow>
+    <mml:mi>p</mml:mi>
+  </mml:munderover>
+  <mml:munderover>
+    <mml:mo>∑</mml:mo>
+    <mml:mrow>
+      <mml:mi>j</mml:mi>
+      <mml:mo>=</mml:mo>
+      <mml:mn>1</mml:mn>
+    </mml:mrow>
+    <mml:mi>q</mml:mi>
+  </mml:munderover>
+  <mml:munderover>
+    <mml:mo>∑</mml:mo>
+    <mml:mrow>
+      <mml:mi>k</mml:mi>
+      <mml:mo>=</mml:mo>
+      <mml:mn>1</mml:mn>
+    </mml:mrow>
+    <mml:mi>r</mml:mi>
+  </mml:munderover>
+  <mml:msub>
+    <mml:mi>a</mml:mi>
+    <mml:mrow>
+      <mml:mi>i</mml:mi>
+      <mml:mi>j</mml:mi>
+    </mml:mrow>
+  </mml:msub>
+  <mml:msub>
+    <mml:mi>b</mml:mi>
+    <mml:mrow>
+      <mml:mi>j</mml:mi>
+      <mml:mi>k</mml:mi>
+    </mml:mrow>
+  </mml:msub>
+  <mml:msub>
+    <mml:mi>c</mml:mi>
+    <mml:mrow>
+      <mml:mi>k</mml:mi>
+      <mml:mi>i</mml:mi>
+    </mml:mrow>
+  </mml:msub>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:msqrt>
+    <mml:mn>1</mml:mn>
+    <mml:mo>+</mml:mo>
+    <mml:msqrt>
+      <mml:mn>1</mml:mn>
+      <mml:mo>+</mml:mo>
+      <mml:msqrt>
+        <mml:mn>1</mml:mn>
+        <mml:mo>+</mml:mo>
+        <mml:msqrt>
+          <mml:mn>1</mml:mn>
+          <mml:mo>+</mml:mo>
+          <mml:msqrt>
+            <mml:mn>1</mml:mn>
+            <mml:mo>+</mml:mo>
+            <mml:msqrt>
+              <mml:mn>1</mml:mn>
+              <mml:mo>+</mml:mo>
+              <mml:msqrt>
+                <mml:mn>1</mml:mn>
+                <mml:mo>+</mml:mo>
+                <mml:mi>x</mml:mi>
+              </mml:msqrt>
+            </mml:msqrt>
+          </mml:msqrt>
+        </mml:msqrt>
+      </mml:msqrt>
+    </mml:msqrt>
+  </mml:msqrt>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:mrow>
+    <mml:mo>(</mml:mo>
+    <mml:mfrac>
+      <mml:msup>
+        <mml:mo>∂</mml:mo>
+        <mml:mn>2</mml:mn>
+      </mml:msup>
+      <mml:mrow>
+        <mml:mo>∂</mml:mo>
+        <mml:msup>
+          <mml:mi>x</mml:mi>
+          <mml:mn>2</mml:mn>
+        </mml:msup>
+      </mml:mrow>
+    </mml:mfrac>
+    <mml:mo>+</mml:mo>
+    <mml:mfrac>
+      <mml:msup>
+        <mml:mo>∂</mml:mo>
+        <mml:mn>2</mml:mn>
+      </mml:msup>
+      <mml:mrow>
+        <mml:mo>∂</mml:mo>
+        <mml:msup>
+          <mml:mi>y</mml:mi>
+          <mml:mn>2</mml:mn>
+        </mml:msup>
+      </mml:mrow>
+    </mml:mfrac>
+    <mml:mo>)</mml:mo>
+  </mml:mrow>
+  <mml:msup>
+    <mml:mrow>
+      <mml:mo minsize="1.5">|</mml:mo>
+      <mml:mi>φ </mml:mi>
+      <mml:mo stretchy="false">(</mml:mo>
+      <mml:mi>x</mml:mi>
+      <mml:mo>+</mml:mo>
+      <mml:mi mathvariant="normal">i</mml:mi>
+      <mml:mi>y</mml:mi>
+      <mml:mo stretchy="false">)</mml:mo>
+      <mml:mo minsize="1.5">|</mml:mo>
+    </mml:mrow>
+    <mml:mn>2</mml:mn>
+  </mml:msup>
+  <mml:mo>=</mml:mo>
+  <mml:mn>0</mml:mn>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation>
+<title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:msup>
+    <mml:mn>2</mml:mn>
+    <mml:msup>
+      <mml:mn>2</mml:mn>
+      <mml:msup>
+        <mml:mn>2</mml:mn>
+        <mml:mi>x</mml:mi>
+      </mml:msup>
+    </mml:msup>
+  </mml:msup>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:msubsup>
+    <mml:mo stretchy="false" mathsize="big">∫</mml:mo>
+    <mml:mn>1</mml:mn>
+    <mml:mi>x</mml:mi>
+ </mml:msubsup>
+ <mml:mfrac>
+   <mml:mrow><mml:mo mathvariant="italic">d</mml:mo><mml:mi>t</mml:mi></mml:mrow>
+   <mml:mi>t</mml:mi>
+ </mml:mfrac>
+</mml:mrow>
+</mml:math></equation><equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:msub>
+    <mml:mo>∬ </mml:mo>
+    <mml:mi>D</mml:mi>
+  </mml:msub>
+  <mml:mo mathvariant="italic">d</mml:mo><mml:mi>x</mml:mi>
+  <mml:mo> </mml:mo>
+  <mml:mo mathvariant="italic">d</mml:mo><mml:mi>y</mml:mi>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:mi>f</mml:mi>
+  <mml:mo stretchy="false">(</mml:mo>
+  <mml:mi>x</mml:mi>
+  <mml:mo stretchy="false">)</mml:mo>
+  <mml:mo>=</mml:mo>
+  <mml:mrow>
+    <mml:mo>{</mml:mo>
+    <mml:mtable>
+      <mml:mtr>
+        <mml:mtd columnalign="center">
+          <mml:mrow>
+            <mml:mn>1</mml:mn>
+            <mml:mo>/</mml:mo>
+            <mml:mn>3</mml:mn>
+          </mml:mrow>
+        </mml:mtd>
+        <mml:mtd columnalign="left">
+          <mml:mrow>
+            <mml:mtext>if </mml:mtext>
+            <mml:mn>0</mml:mn>
+            <mml:mo>≤</mml:mo>
+            <mml:mi>x</mml:mi>
+            <mml:mo>≤</mml:mo>
+            <mml:mn>1</mml:mn>
+            <mml:mo>;</mml:mo>
+          </mml:mrow>
+        </mml:mtd>
+      </mml:mtr>
+      <mml:mtr>
+        <mml:mtd columnalign="center">
+          <mml:mrow>
+            <mml:mn>2</mml:mn>
+            <mml:mo>/</mml:mo>
+            <mml:mn>3</mml:mn>
+          </mml:mrow>
+        </mml:mtd>
+        <mml:mtd columnalign="center">
+          <mml:mrow>
+            <mml:mtext>if </mml:mtext>
+            <mml:mn>3</mml:mn>
+            <mml:mo>≤</mml:mo>
+            <mml:mi>x</mml:mi>
+            <mml:mo>≤</mml:mo>
+            <mml:mn>4</mml:mn>
+            <mml:mo>;</mml:mo>
+          </mml:mrow>
+        </mml:mtd>
+      </mml:mtr>
+      <mml:mtr>
+        <mml:mtd columnalign="center">
+          <mml:mn>0</mml:mn>
+        </mml:mtd>
+        <mml:mtd columnalign="left">
+          <mml:mtext>elsewhere.</mml:mtext>
+        </mml:mtd>
+      </mml:mtr>
+    </mml:mtable>
+  </mml:mrow>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mover>
+  <mml:mrow>
+    <mml:mi>x</mml:mi>
+    <mml:mo>+</mml:mo>
+    <mml:mo>...</mml:mo>
+    <mml:mo>+</mml:mo>
+    <mml:mi>x</mml:mi>
+  </mml:mrow>
+  <mml:mover>
+    <mml:mo>︷</mml:mo>
+    <mml:mrow><mml:mi>k</mml:mi> <mml:mtext>times</mml:mtext></mml:mrow>
+  </mml:mover>
+</mml:mover>
+</mml:math></equation><equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:msub>
+    <mml:mi>y</mml:mi>
+    <mml:msup>
+      <mml:mi>x</mml:mi>
+      <mml:mn>2</mml:mn>
+    </mml:msup>
+  </mml:msub>
+</mml:mrow>
+</mml:math></equation><equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:munder>
+    <mml:mo>∑</mml:mo>
+    <mml:mrow>
+      <mml:mi>p</mml:mi>
+      <mml:mtext> prime</mml:mtext>
+    </mml:mrow>
+  </mml:munder>
+  <mml:mi>f</mml:mi>
+  <mml:mo stretchy="false">(</mml:mo>
+  <mml:mi>p</mml:mi>
+  <mml:mo stretchy="false">)</mml:mo>
+  <mml:mo>=</mml:mo>
+  <mml:msub>
+    <mml:mo stretchy="false">∫</mml:mo>
+    <mml:mrow>
+      <mml:mi>t</mml:mi>
+      <mml:mo>&gt;</mml:mo>
+      <mml:mn>1</mml:mn>
+    </mml:mrow>
+  </mml:msub>
+  <mml:mi>f</mml:mi>
+  <mml:mo stretchy="false">(</mml:mo>
+  <mml:mi>t</mml:mi>
+  <mml:mo stretchy="false">)</mml:mo>
+  <mml:mo> </mml:mo>
+  <mml:mo mathvariant="italic">d</mml:mo>
+  <mml:mi>π</mml:mi>
+  <mml:mo stretchy="false">(</mml:mo>
+  <mml:mi>t</mml:mi>
+  <mml:mo stretchy="false">)</mml:mo>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:mo stretchy="false">{</mml:mo>
+  <mml:munder>
+    <mml:mrow>
+      <mml:mover>
+        <mml:mrow>
+          <mml:mpadded width="0"><mml:mphantom><mml:mo>(</mml:mo></mml:mphantom></mml:mpadded>
+          <mml:mi>a</mml:mi>
+          <mml:mo>,</mml:mo>
+          <mml:mo>...</mml:mo>
+          <mml:mo>,</mml:mo>
+          <mml:mi>a</mml:mi>
+        </mml:mrow>
+        <mml:mover>
+          <mml:mo>︷</mml:mo>
+          <mml:mrow>
+            <mml:mi>k</mml:mi>
+            <mml:mtext> </mml:mtext>
+            <mml:mi>a</mml:mi>
+            <mml:mtext>'s</mml:mtext>
+          </mml:mrow>
+        </mml:mover>
+      </mml:mover>
+      <mml:mo>,</mml:mo>
+      <mml:mover>
+        <mml:mrow>
+          <mml:mpadded width="0"><mml:mphantom><mml:mo>(</mml:mo></mml:mphantom></mml:mpadded>
+          <mml:mi>b</mml:mi>
+          <mml:mo>,</mml:mo>
+          <mml:mo>...</mml:mo>
+          <mml:mo>,</mml:mo>
+          <mml:mi>b</mml:mi>
+        </mml:mrow>
+        <mml:mover>
+          <mml:mo>︷</mml:mo>
+          <mml:mrow>
+            <mml:mi>ℓ</mml:mi>
+            <mml:mtext> </mml:mtext>
+            <mml:mi>b</mml:mi>
+            <mml:mtext>'s</mml:mtext>
+          </mml:mrow>
+        </mml:mover>
+      </mml:mover>
+    </mml:mrow>
+    <mml:munder>
+      <mml:mo>︸</mml:mo>
+      <mml:mrow>
+        <mml:mi>k</mml:mi>
+        <mml:mo>+</mml:mo>
+        <mml:mi>ℓ</mml:mi>
+        <mml:mtext> elements</mml:mtext>
+      </mml:mrow>
+    </mml:munder>
+  </mml:munder>
+  <mml:mo stretchy="false">}</mml:mo>
+</mml:mrow>
+</mml:math>
+</equation>
+
+<equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:mo>(</mml:mo>
+  <mml:mtable>
+    <mml:mtr>
+      <mml:mtd columnalign="center">
+
+        <mml:mrow>
+          <mml:mo>(</mml:mo>
+          <mml:mtable>
+            <mml:mtr>
+              <mml:mtd columnalign="center">
+                <mml:mi>a</mml:mi>
+              </mml:mtd>
+              <mml:mtd columnalign="center">
+
+                <mml:mi>b</mml:mi>
+              </mml:mtd>
+            </mml:mtr>
+            <mml:mtr>
+              <mml:mtd columnalign="center">
+                <mml:mi>c</mml:mi>
+              </mml:mtd>
+              <mml:mtd columnalign="center">
+
+                <mml:mi>d</mml:mi>
+              </mml:mtd>
+            </mml:mtr>
+          </mml:mtable>
+          <mml:mo>)</mml:mo>
+        </mml:mrow>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+
+        <mml:mrow>
+          <mml:mo>(</mml:mo>
+          <mml:mtable>
+            <mml:mtr>
+              <mml:mtd columnalign="center">
+                <mml:mi>e</mml:mi>
+              </mml:mtd>
+              <mml:mtd columnalign="center">
+
+                <mml:mi>f</mml:mi>
+              </mml:mtd>
+            </mml:mtr>
+            <mml:mtr>
+              <mml:mtd columnalign="center">
+                <mml:mi>g</mml:mi>
+              </mml:mtd>
+              <mml:mtd columnalign="center">
+
+                <mml:mi>h</mml:mi>
+              </mml:mtd>
+            </mml:mtr>
+          </mml:mtable>
+          <mml:mo>)</mml:mo>
+        </mml:mrow>
+      </mml:mtd>
+    </mml:mtr>
+
+    <mml:mtr>
+      <mml:mtd columnalign="center">
+        <mml:mn>0</mml:mn>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+        <mml:mrow>
+          <mml:mo>(</mml:mo>
+          <mml:mtable>
+
+            <mml:mtr>
+              <mml:mtd columnalign="center">
+                <mml:mi>i</mml:mi>
+              </mml:mtd>
+              <mml:mtd columnalign="center">
+                <mml:mi>j</mml:mi>
+              </mml:mtd>
+            </mml:mtr>
+
+            <mml:mtr>
+              <mml:mtd columnalign="center">
+                <mml:mi>k</mml:mi>
+              </mml:mtd>
+              <mml:mtd columnalign="center">
+                <mml:mi>l</mml:mi>
+              </mml:mtd>
+            </mml:mtr>
+
+          </mml:mtable>
+          <mml:mo>)</mml:mo>
+        </mml:mrow>
+      </mml:mtd>
+    </mml:mtr>
+  </mml:mtable>
+  <mml:mo>)</mml:mo>
+</mml:mrow>
+
+</mml:math></equation><equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:mo>det</mml:mo>
+  <mml:mo>|</mml:mo>
+  <mml:mtable>
+
+    <mml:mtr>
+      <mml:mtd columnalign="center">
+        <mml:msub>
+          <mml:mi>c</mml:mi>
+          <mml:mn>0</mml:mn>
+        </mml:msub>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+
+        <mml:msub>
+          <mml:mi>c</mml:mi>
+          <mml:mn>1</mml:mn>
+        </mml:msub>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+        <mml:msub>
+          <mml:mi>c</mml:mi>
+
+          <mml:mn>2</mml:mn>
+        </mml:msub>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+        <mml:mo>…</mml:mo>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+        <mml:msub>
+
+          <mml:mi>c</mml:mi>
+          <mml:mi>n</mml:mi>
+        </mml:msub>
+      </mml:mtd>
+    </mml:mtr>
+    <mml:mtr>
+      <mml:mtd columnalign="center">
+        <mml:msub>
+
+          <mml:mi>c</mml:mi>
+          <mml:mn>1</mml:mn>
+        </mml:msub>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+        <mml:msub>
+          <mml:mi>c</mml:mi>
+
+          <mml:mn>2</mml:mn>
+        </mml:msub>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+        <mml:msub>
+          <mml:mi>c</mml:mi>
+          <mml:mn>3</mml:mn>
+
+        </mml:msub>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+        <mml:mo>…</mml:mo>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+        <mml:msub>
+          <mml:mi>c</mml:mi>
+
+          <mml:mrow>
+            <mml:mi>n</mml:mi>
+            <mml:mo>+</mml:mo>
+            <mml:mn>1</mml:mn>
+          </mml:mrow>
+        </mml:msub>
+      </mml:mtd>
+
+    </mml:mtr>
+    <mml:mtr>
+      <mml:mtd columnalign="center">
+        <mml:msub>
+          <mml:mi>c</mml:mi>
+          <mml:mn>2</mml:mn>
+        </mml:msub>
+      </mml:mtd>
+
+      <mml:mtd columnalign="center">
+        <mml:msub>
+          <mml:mi>c</mml:mi>
+          <mml:mn>3</mml:mn>
+        </mml:msub>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+        <mml:msub>
+
+          <mml:mi>c</mml:mi>
+          <mml:mn>4</mml:mn>
+        </mml:msub>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+        <mml:mo>…</mml:mo>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+
+        <mml:msub>
+          <mml:mi>c</mml:mi>
+          <mml:mrow>
+            <mml:mi>n</mml:mi>
+            <mml:mo>+</mml:mo>
+            <mml:mn>2</mml:mn>
+          </mml:mrow>
+
+        </mml:msub>
+      </mml:mtd>
+    </mml:mtr>
+    <mml:mtr>
+      <mml:mtd columnalign="center">
+        <mml:mo>⋮</mml:mo>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+        <mml:mo>⋮</mml:mo>
+
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+        <mml:mo>⋮</mml:mo>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+        <mml:mo>⋮</mml:mo>
+      </mml:mtd>
+
+    </mml:mtr>
+    <mml:mtr>
+      <mml:mtd columnalign="center">
+        <mml:msub>
+          <mml:mi>c</mml:mi>
+          <mml:mi>n</mml:mi>
+        </mml:msub>
+      </mml:mtd>
+
+      <mml:mtd columnalign="center">
+        <mml:msub>
+          <mml:mi>c</mml:mi>
+          <mml:mrow>
+            <mml:mi>n</mml:mi>
+            <mml:mo>+</mml:mo>
+            <mml:mn>1</mml:mn>
+
+          </mml:mrow>
+        </mml:msub>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+        <mml:msub>
+          <mml:mi>c</mml:mi>
+          <mml:mrow>
+            <mml:mi>n</mml:mi>
+
+            <mml:mo>+</mml:mo>
+            <mml:mn>2</mml:mn>
+          </mml:mrow>
+        </mml:msub>
+      </mml:mtd>
+      <mml:mtd columnalign="center">
+        <mml:mo>…</mml:mo>
+      </mml:mtd>
+
+      <mml:mtd columnalign="center">
+        <mml:msub>
+          <mml:mi>c</mml:mi>
+          <mml:mrow>
+            <mml:mn>2</mml:mn>
+            <mml:mi>n</mml:mi>
+          </mml:mrow>
+
+        </mml:msub>
+      </mml:mtd>
+    </mml:mtr>
+  </mml:mtable>
+  <mml:mo>|</mml:mo>
+  <mml:mo>&gt;</mml:mo>
+  <mml:mn>0</mml:mn>
+</mml:mrow>
+
+</mml:math></equation><equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:msub>
+  <mml:mi>y</mml:mi>
+  <mml:msub>
+    <mml:mi>x</mml:mi>
+
+    <mml:mn>2</mml:mn>
+  </mml:msub>
+</mml:msub>
+</mml:math></equation><equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:mrow>
+  <mml:msubsup>
+
+    <mml:mi>x</mml:mi>
+    <mml:mn>92</mml:mn>
+    <mml:mn>31415</mml:mn>
+  </mml:msubsup>
+  <mml:mo>+</mml:mo>
+  <mml:mi>π</mml:mi>
+</mml:mrow>
+
+</mml:math></equation><equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:msubsup>
+  <mml:mi>x</mml:mi>
+  <mml:msubsup>
+    <mml:mi>y</mml:mi>
+
+    <mml:mi>b</mml:mi>
+    <mml:mi>a</mml:mi>
+  </mml:msubsup>
+  <mml:msubsup>
+    <mml:mi>z</mml:mi>
+    <mml:mi>c</mml:mi>
+    <mml:mi>d</mml:mi>
+
+  </mml:msubsup>
+</mml:msubsup>
+</mml:math></equation><equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:msubsup>
+  <mml:mi>y</mml:mi>
+  <mml:mn>3</mml:mn>
+
+  <mml:mrow>
+    <mml:mo>′</mml:mo>
+    <mml:mo>′</mml:mo>
+    <mml:mo>′</mml:mo>
+  </mml:mrow>
+</mml:msubsup>
+</mml:math></equation><equation><title/><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<mml:msubsup>
+  <mml:mi>y</mml:mi>
+
+  <mml:mn>3</mml:mn>
+  <mml:mrow>
+    <mml:mo>'</mml:mo>
+    <mml:mo>'</mml:mo>
+    <mml:mo>'</mml:mo>
+  </mml:mrow>
+</mml:msubsup>
+
+</mml:math></equation>
+++++
